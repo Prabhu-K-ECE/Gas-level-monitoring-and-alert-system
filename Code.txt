@@ -12,7 +12,6 @@ int min_value=280;
 
 void send_sms()
 {
-  
   Serial.begin(9600);   
   Serial.begin(9600);     
   delay(5000);
@@ -82,7 +81,6 @@ void loop()
     {
       send_sms();
       buzzor();
-      
     }
    }
 }
