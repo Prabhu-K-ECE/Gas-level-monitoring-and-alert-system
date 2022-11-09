@@ -27,11 +27,9 @@ void send_sms()
 
 void buzzor()
 {
-
       digitalWrite(3,HIGH);
       delay(5000);
       digitalWrite(3,LOW);
-
 }
 
 void setup()
