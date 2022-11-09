@@ -70,19 +70,19 @@ void loop()
   }
   else
   {
-  		lcd.clear();
-  		Serial.print(units);
-  		lcd.setCursor(0,0);
-  		lcd.print("Weight[kg]");
-  		lcd.setCursor(0,1);
-  		lcd.print(units/1000);
-  		Serial.println(" grams");
-  		delay(1000);
-  		if(units<min_value)
-  		{
-      	send_sms();
-      	buzzor();
+    lcd.clear();
+    Serial.print(units);
+    lcd.setCursor(0,0);
+    lcd.print("Weight[kg]");
+    lcd.setCursor(0,1);
+    lcd.print(units/1000);
+    Serial.println(" grams");
+    delay(1000);
+    if(units<min_value)
+    {
+      send_sms();
+      buzzor();
       
-  		}
-	}
+    }
+   }
 }
